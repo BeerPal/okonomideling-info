@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Økonomideling</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0; padding: 48px 24px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: #f4f4f8; color: #1d1b31;
+      display: flex; justify-content: center;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #17161f; color: #e8e6f2; }
+      .kort { background: #211f2e !important; }
+      .dempet { color: #a5a1bd !important; }
+    }
+    main { max-width: 640px; width: 100%; }
+    .logo { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+    .logo svg { flex: none; }
+    h1 { font-size: 1.6rem; margin: 0; }
+    .kort {
+      background: #fff; border-radius: 14px; padding: 24px 28px;
+      margin-bottom: 16px; line-height: 1.6;
+      box-shadow: 0 1px 4px rgba(29, 27, 49, .07);
+    }
+    h2 { font-size: 1.05rem; margin: 0 0 8px; }
+    p { margin: 0 0 12px; }
+    p:last-child { margin-bottom: 0; }
+    .dempet { color: #5d5a75; font-size: .92rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="logo">
+      <svg width="56" height="42" viewBox="0 0 76 56" aria-hidden="true">
+        <defs><clipPath id="topp"><rect x="33" y="0" width="14" height="28"/></clipPath></defs>
+        <circle cx="28" cy="28" r="18" fill="none" stroke="#4B3F9E" stroke-width="9"/>
+        <circle cx="48" cy="28" r="18" fill="none" stroke="#B5D93B" stroke-width="9"/>
+        <circle cx="28" cy="28" r="18" fill="none" stroke="#4B3F9E" stroke-width="9" clip-path="url(#topp)"/>
+      </svg>
+      <h1>Økonomideling</h1>
+    </div>
+
+    <div class="kort">
+      <h2>Om appen</h2>
+      <p>Økonomideling er en privat utviklet app for husholdninger som vil
+      dele utgifter rettferdig og ha full oversikt over egen økonomi.
+      Appen er under utvikling og ikke åpent tilgjengelig ennå.</p>
+    </div>
+
+    <div class="kort">
+      <h2>Personvern</h2>
+      <p>Appen er bygget etter et enkelt prinsipp: dataene tilhører
+      husholdningen selv.</p>
+      <p>Bankkoblinger settes opp av brukeren med brukerens egne
+      API-nøkler og har utelukkende lesetilgang — appen kan aldri flytte
+      penger eller endre noe i banken. Alle data lagres innenfor EU/EØS
+      (Stockholm), deles ikke med tredjeparter og brukes ikke til reklame
+      eller analyse.</p>
+      <p class="dempet">Fullstendig personvernerklæring publiseres på
+      denne siden før appen åpnes for betatesting.</p>
+    </div>
+
+    <p class="dempet">© 2026 Økonomideling</p>
+  </main>
+</body>
+</html>
