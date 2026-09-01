@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Vipps-lenketest</title>
+  <title>Vipps-lenketest — runde 2</title>
   <style>
     body { font-family: system-ui, sans-serif; margin: 0; padding: 24px;
            background: #f6f6f4; color: #1c1c1e; line-height: 1.5; }
@@ -18,37 +18,42 @@
   </style>
 </head>
 <body>
-  <h1>Vipps-lenketest</h1>
-  <p>Trykk én og én knapp. Noter for hver: åpnet Vipps? mottaker utfylt?
-     <strong>beløp utfylt?</strong> (Alle er 1 kr til 930&nbsp;94&nbsp;080.)</p>
+  <h1>Vipps-lenketest — runde 2 (100 kr)</h1>
+  <p>Alle går til 930&nbsp;94&nbsp;080 og skal vise <strong>100 kr</strong>
+     hvis parameteren virker. IKKE fullfør betalingen — bare se om
+     beløpsfeltet fylles, og lukk.</p>
 
-  <a class="knapp" href="vipps://send?phone=93094080&amount=1&comment=TestA">
-    A: vipps://send (MobilePay-mønsteret)
-    <small>vipps://send?phone=93094080&amp;amount=1&amp;comment=TestA</small>
+  <a class="knapp" href="https://qr.vipps.no/28/2/01/031/93094080?v=1&a=10000&m=TestF">
+    F: a=10000 (øre, 100 kr)
+    <small>?v=1&amp;a=10000&amp;m=TestF</small>
   </a>
 
-  <a class="knapp" href="mobilepay://send?phone=93094080&amount=1&comment=TestB">
-    B: mobilepay://send
-    <small>mobilepay://send?phone=93094080&amp;amount=1&amp;comment=TestB</small>
+  <a class="knapp" href="https://qr.vipps.no/28/2/01/031/93094080?v=1&amount=10000&m=TestG">
+    G: amount=10000 (øre)
+    <small>?v=1&amp;amount=10000&amp;m=TestG</small>
   </a>
 
-  <a class="knapp" href="https://qr.vipps.no/28/2/01/031/93094080?v=1&amount=100&m=TestC">
-    C: qr-lenke med amount=100 (øre)
-    <small>qr.vipps.no/...?v=1&amp;amount=100&amp;m=TestC</small>
+  <a class="knapp" href="https://qr.vipps.no/28/2/01/031/93094080?v=1&amount=100&m=TestH">
+    H: amount=100 (kroner)
+    <small>?v=1&amp;amount=100&amp;m=TestH</small>
   </a>
 
-  <a class="knapp" href="https://qr.vipps.no/28/2/01/031/93094080?v=1&amount=1&m=TestD">
-    D: qr-lenke med amount=1 (kroner)
-    <small>qr.vipps.no/...?v=1&amp;amount=1&amp;m=TestD</small>
+  <a class="knapp" href="https://qr.vipps.no/28/2/01/031/93094080?v=1&sum=100&m=TestI">
+    I: sum=100
+    <small>?v=1&amp;sum=100&amp;m=TestI</small>
   </a>
 
-  <a class="knapp" href="https://qr.vipps.no/28/2/01/031/93094080?v=1&a=100&m=TestE">
-    E: qr-lenke med a=100 (den vi alt vet gir 0 kr)
-    <small>qr.vipps.no/...?v=1&amp;a=100&amp;m=TestE</small>
+  <a class="knapp" href="https://qr.vipps.no/28/2/01/031/93094080?v=1&belop=100&m=TestJ">
+    J: belop=100
+    <small>?v=1&amp;belop=100&amp;m=TestJ</small>
   </a>
 
-  <p>Ekstra fasit: åpne Vipps → <em>QR</em> → din egen kode →
-     <em>legg til beløp</em> (hvis appen tilbyr det) → send skjermbilde av
-     QR-koden til Claude. Da kan vi lese Vipps' eget format med beløp.</p>
+  <a class="knapp" href="https://qr.vipps.no/28/2/01/031/93094080?v=2&a=10000&m=TestK">
+    K: v=2 med a=10000
+    <small>?v=2&amp;a=10000&amp;m=TestK</small>
+  </a>
+
+  <p>Sjekk også: ble <strong>meldingen</strong> («TestF» osv.) med i noen
+     av dem? Det forteller om parametre i det hele tatt leses.</p>
 </body>
 </html>
